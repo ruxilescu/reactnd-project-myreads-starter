@@ -1,5 +1,5 @@
 # MyReads Project
-This applicatiuon was created with create-react-app.
+This application was created with create-react-app.
 
 To Install & Run myreads application:
 
