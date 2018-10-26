@@ -41,3 +41,11 @@ ROUTING:
 
 The main page contains a link to the search page.
 When the link is clicked, the search page is displayed and the URL in the browser's address displays /search
+
+
+RESOURCES & TUTORIALS:
+
+https://www.youtube.com/watch?v=i6L2jLHV9j8&t=1542s
+https://www.youtube.com/watch?v=bpKI3R0nf7E
+https://www.youtube.com/watch?v=92dtrNU1GQc&t=2685s
+https://www.youtube.com/watch?v=Uw5Ij56RhME&t=8s
