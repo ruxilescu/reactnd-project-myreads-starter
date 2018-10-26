@@ -26,20 +26,20 @@ class SearchBooksPage extends React.Component {
 
  
     
-    handleChange = async e => {
+    handleChange = async event => {
        try {
-           const query = e.target.value;
+           const query = event.target.value;
             this.setState({query});
            
            if(query.trim()) {
           
-           const results =await search(query);
-           if(results.error) {
+           const outcome =await search(query);
+           if(outcome.error) {
             this.setState({ books:[] });
            } 
                else {
                    
-            this.setState({books: results});  
+            this.setState({books: outcome});  
            }
         } else {
             this.setState({books: [] })
@@ -73,12 +73,12 @@ class SearchBooksPage extends React.Component {
             
             {this.state.books.length > 0 && 
             this.state.books.map(book => {
-            const foundShelf = this.props.books.find(
+            const newShelf = this.props.books.find(
             searchBook => searchBook.id === book.id
         );
         
-       if(foundShelf) {
-           book.shelf =foundShelf.shelf;
+       if(newShelf) {
+           book.shelf =newShelf.shelf;
        } else {
            book.shelf = "none";
        }

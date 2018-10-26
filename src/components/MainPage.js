@@ -29,7 +29,6 @@ render() {
     <BookShelf title="Read" books={this.props.read} moveBook={this.props.moveBook} />
         
       </div>
-    
       </div>
         );
   }

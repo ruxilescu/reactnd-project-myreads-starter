@@ -5,14 +5,14 @@ import {update} from '../BooksAPI'
 
 class Book extends React.Component {
     
-    handleChange =async e => {
+    handleChange =async event => {
         try {
-            const shelf = e.target.value;
+            const shelf = event.target.value;
             const book = this.props;
-            const result = await update(book,shelf);
+            const updateBookShelf = await update(book,shelf);
                 
-            this.props.moveBook(book, shelf, result);
-            console.log(result);
+            this.props.moveBook(book, shelf, updateBookShelf);
+            console.log(updateBookShelf);
         } catch(error) {
             console.log(error);
         }
