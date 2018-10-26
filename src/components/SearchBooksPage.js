@@ -9,7 +9,7 @@ class SearchBooksPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            guery: "",
+            query: "",
             books:[]  
         };
     }

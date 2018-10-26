@@ -8,7 +8,7 @@ class index extends React.Component {
     super(props);
     this.state = {
       books: [],
-      currentlyReading:[],
+      currentlyReading: [],
       wantToRead:[],
       read:[],
       addBooks: books => { 
