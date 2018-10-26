@@ -1,9 +1,6 @@
 import React, { Component} from 'react';
-import { Link } from 'react-router-dom'
-//import * as BooksAPI from './BooksAPI'
-import BookShelf from '../components/BookShelf'
-import FAB from '../components/FAB'
-import {getAll} from  '../BooksAPI'
+import BookShelf from '../components/BookShelf';
+import {getAll} from  '../BooksAPI';
 
 class MainPage extends React.Component {
 
@@ -32,7 +29,7 @@ render() {
     <BookShelf title="Read" books={this.props.read} moveBook={this.props.moveBook} />
         
       </div>
-      <FAB />  
+    
       </div>
         );
   }
