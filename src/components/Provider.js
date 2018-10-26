@@ -3,7 +3,7 @@ import * as BooksAPI from '../BooksAPI'
 export const MyContext = React.createContext();
 
     
-class index extends React.Component {
+class Provider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,6 +55,6 @@ class index extends React.Component {
       </MyContext.Provider>)
   }
 }
-        export default index;
+        export default Provider;
         
      

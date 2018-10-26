@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import SearchBooksPage from './components/SearchBooksPage';
 import MainPage from './components/MainPage';
 import BookShelf from './components/BookShelf';
-import Provider, { MyContext } from './Provider/';
+import Provider, { MyContext } from './components/Provider';
 import './App.css';
 
 class BooksApp extends React.Component {
